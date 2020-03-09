@@ -45,8 +45,8 @@ class PersonApplication[T](parser: Parser[T]) {
 
 object ParserExample {
   def main(args: Array[String]): Unit = {
-    val csvPeople = Parser("people.csv")
-    val jsonPeople = Parser("people.json")
+    val csvPeople = Parser("/Users/spachari/IdeaProjects/ScalaLearning/src/resources/strategypatterndata.csv")
+    val jsonPeople = Parser("/Users/spachari/IdeaProjects/ScalaLearning/src/resources/strategypatterndata.json")
     
     val applicationCsv = new PersonApplication(csvPeople)
     val applicationJson = new PersonApplication(jsonPeople)

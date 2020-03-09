@@ -40,7 +40,6 @@ trait PartialFunctionDispenser {
       val left = amount % dispenserAmount
       System.out.println(s"Dispensing $notes note/s of $dispenserAmount.")
       Money(left)
-    case m @ Money(amount) =>
-      m
+    case m @ Money(amount) => m
   }
 }

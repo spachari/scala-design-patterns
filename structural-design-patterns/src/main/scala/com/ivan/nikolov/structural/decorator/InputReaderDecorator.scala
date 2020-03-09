@@ -12,8 +12,11 @@ abstract class InputReaderDecorator(inputReader: InputReader) extends InputReade
   override def readLines(): Stream[String] = inputReader.readLines()
 }
 
-class CapitalizedInputReader(inputReader: InputReader) extends InputReaderDecorator(inputReader) {
-  override def readLines(): Stream[String] = super.readLines().map(_.toUpperCase)
+class CapitalizedInputReader(inputReader: InputReader) extends InputReaderDecorator(inputReader) with LazyLogging {
+  override def readLines(): Stream[String] = {
+    logger.info("inside Caputalized input reader")
+    super.readLines().map(_.toUpperCase)}
+
 }
 
 class CompressingInputReader(inputReader: InputReader) extends InputReaderDecorator(inputReader) with LazyLogging {
@@ -35,10 +38,12 @@ class CompressingInputReader(inputReader: InputReader) extends InputReaderDecora
   }
 }
 
-class Base64EncoderInputReader(inputReader: InputReader) extends InputReaderDecorator(inputReader) {
-  override def readLines(): Stream[String] = super.readLines().map {
+class Base64EncoderInputReader(inputReader: InputReader) extends InputReaderDecorator(inputReader) with LazyLogging {
+  override def readLines(): Stream[String] = {
+    logger.info("inside Base64EncoderInputReader input reader")
+    super.readLines().map {
     case line => Base64.getEncoder.encodeToString(line.getBytes(Charset.forName("UTF-8")))
-  }
+  }}
 }
 
 object DecoratorExample {
