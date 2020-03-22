@@ -37,6 +37,22 @@
             <artifactId>h2</artifactId>
             <version>${h2.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.specs2</groupId>
+            <artifactId>specs2-core</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.specs2</groupId>
+            <artifactId>specs2-mock</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.specs2</groupId>
+            <artifactId>specs2-junit</artifactId>
+            <version>3.7</version>
+        </dependency>
+
     </dependencies>
     
 </project>
