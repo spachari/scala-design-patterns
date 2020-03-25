@@ -20,4 +20,3 @@ object PartiallyDefinedExample {
     System.out.println(s"Square roots or squares: ${items.collect(squareRoot.orElse(square))}")
   }
 }
-

@@ -1,4 +1,7 @@
-package com.ivan.nikolov.implicits.di
+package com.practice.examples.implicits.di
+
+import com.practice.examples.implicits.di.model.DatabaseService
+
 
 trait UserService {
   def getAverageAgeOfPeople()(implicit ds: DatabaseService): Double

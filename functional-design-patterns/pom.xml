@@ -38,20 +38,23 @@
             <version>${h2.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.specs2</groupId>
-            <artifactId>specs2-core</artifactId>
-            <version>3.7</version>
+            <groupId>org.scalcheck</groupId>
+            <artifactId>scalacheck_2.12</artifactId>
+            <version>${scalacheck.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.specs2</groupId>
-            <artifactId>specs2-mock</artifactId>
-            <version>3.7</version>
+            <groupId>org.scalaz</groupId>
+            <artifactId>scalaz-scalacheck-binding_2.12</artifactId>
+            <version>${scalaz.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.specs2</groupId>
-            <artifactId>specs2-junit</artifactId>
-            <version>3.7</version>
+            <groupId>org.scalaz</groupId>
+            <artifactId>scalaz-effect_2.11</artifactId>
+            <version>${scalaz.version}</version>
         </dependency>
+
 
     </dependencies>
     

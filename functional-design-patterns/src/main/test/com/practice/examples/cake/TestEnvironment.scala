@@ -11,7 +11,6 @@ trait TestEnvironment extends UserComponent with DaoComponent with DatabaseCompo
   override val migrationService: MigrationService = mock[MigrationService]
   override val userService: UserService = mock[UserService]
 
-
 }
 
 /*

@@ -52,6 +52,18 @@
             <version>1.9.5</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.scalcheck</groupId>
+            <artifactId>scalacheck_2.11</artifactId>
+            <version>${scalacheck.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalaz</groupId>
+            <artifactId>scalaz-scalacheck-binding_2.11</artifactId>
+            <version>${scalaz.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
